@@ -168,31 +168,68 @@ input[type="checkbox"] {
 
 
 /**========================body ==============================**/
-.main{
+.main {
     max-width: 1200px;
-    margin: 2rem auto ;
+    margin: 2rem auto;
     padding: 0 2rem;
     padding-top: 20px;
+    transition: transform 0.3s ease-in-out;
 }
-section{
+
+.main:hover {
+    transform: scale(1.02);
+}
+
+section {
     background-color: white;
     padding: 2rem;
     margin-bottom: 2rem;
     border: 1px solid white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-#info{
+section:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+}
+
+#info {
     background: linear-gradient(135deg, #f6d365, #fda085);
     color: #333;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-#info h1{
+#info h1 {
     font-size: 30px;
     padding: 10px;
+    position: relative;
+    animation: slideIn 0.7s ease-in-out;
 }
 
-#info p{
+#info p {
     padding-top: 10px;
+    opacity: 0;
+    animation: fadeIn 2s 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
