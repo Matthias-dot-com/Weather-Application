@@ -1,21 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-</head>
-<body>
-    <div class="header">
-        <div class="upper"></div>
-        <div class="lower"></div>
-    </div>
+  </head>
+  <body>
+    <header class="head">
+      <div class="header">
+        <div class="left-header">
+          <img src="#" id="logo" alt="" />
+          <h1>Weather RUST</h1>
+        </div>
+        <div class="right-header">
+          <div class="upper">
+            <form action="#">
+              <div class="right-form">
+                <input type="search" class="search" />
+                <button class="search-btn">Search</button>
+              </div>
+              <div class="left-form">
+                <label for="metric"
+                  ><input type="checkbox" id="metric" />SI-Unit</label
+                >
+              </div>
+            </form>
+            <button id="reload-btn">
+              <img src="#" id="reload" height="32px" width="32px" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="lower">
+        <ul>
+          <li class="list-1"><a href="" class="link-1">Today</a></li>
+          <li class="list-2"><a href="" class="link-2">Hourly</a></li>
+          <li class="list-3"><a href="" class="link-3">Daily</a></li>
+        </ul>
+      </div>
+    </header>
 
-    <section class="main">
-        <div class="info"></div>
+    <main class="main">
+      <section id="info">
+        
+        <div class="info">
+          <h1>Location Information</h1>
+          <hr />
+          <ul>
+            <li class="info-1">
+              <p>Address : </p>
+            </li>
+            <li class="info-2">
+              <p>Timezone : </p>
+            </li>
+            <li class="info-3">
+              <p>Description : </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="current">
         <div class="Current"></div>
+      </section>
+
+      <section id="today">
         <div class="today"></div>
+      </section>
+      <section id="hourly">
+        <div class="hourly"></div>
+      </section>
+      <section id="daily">
         <div class="Daily"></div>
-    </section>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
