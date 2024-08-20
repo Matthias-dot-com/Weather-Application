@@ -92,7 +92,7 @@ header {
 .search {
     width: 300px;
     height: 35px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
     padding: 5px 10px;
     background: linear-gradient(145deg, #f0f0f0, #d0d0d0);
@@ -201,8 +201,8 @@ section:hover {
 }
 
 #info {
-    background: linear-gradient(135deg, #f6d365, #fda085);
-    color: #333;
+    background: linear-gradient(135deg, #2f54f9, #47d0e4);
+    color: #fffdfd;
     animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -215,6 +215,7 @@ section:hover {
 
 #info p {
     padding-top: 10px;
+    font-size: 20px;
     opacity: 0;
     animation: fadeIn 2s 0.5s forwards;
 }
