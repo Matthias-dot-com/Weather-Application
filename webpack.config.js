@@ -2,6 +2,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import  MiniCssExtractPlugin  from 'mini-css-extract-plugin';
+import { type } from 'os';
 
 
 const __filename = fileURLToPath(import.meta.url);
@@ -34,6 +35,10 @@ export default {
           'css-loader',
         ],
       },
+      {
+        test : /.(png|svg|jpe?g|jpg)$/i,
+        type : "asset/resource"
+      }
     ],
   },
   plugins: [
