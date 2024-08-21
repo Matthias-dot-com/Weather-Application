@@ -1,8 +1,10 @@
-import i from './i.jpg';
-import r from './refresh-button.png';
-import './css/style.css'
-
-const logoImg = document.querySelector("#logo");
-const reloadImg = document.querySelector("#reload");
+import i from "./i.jpg";
+import r from "./refresh-button.png";
+import "./css/style.css";
+import { logoImg, reloadImg } from "./modules/dom.js";
+import { apiCall } from "./modules/api.js";
+import { getLocation } from "./modules/default.js";
 reloadImg.src = r;
 logoImg.src = i;
+apiCall();
+getLocation();
