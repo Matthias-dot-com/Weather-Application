@@ -1,10 +1,20 @@
 import i from "./i.jpg";
 import r from "./refresh-button.png";
 import "./css/style.css";
-import { logoImg, reloadImg } from "./modules/dom.js";
+import {
+  logoImg,
+  reloadImg,
+  search,
+  searchBtn,
+} from "./modules/dom.js";
 import { apiCall } from "./modules/api.js";
-import { getLocation } from "./modules/default.js";
 reloadImg.src = r;
 logoImg.src = i;
-apiCall();
-getLocation();
+let loc;
+searchBtn.addEventListener('click',(e) => {
+  e.preventDefault();
+ loc =  search.value;
+apiCall(loc);
+});
+
+

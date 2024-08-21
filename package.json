@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": { 
+  "scripts": {
     "build": "webpack --mode production",
     "start": "webpack serve --mode development --open",
     "lint": "eslint . --ext .js",
     "lint:fix": "eslint . --ext .js --fix",
     "clean": "rm -rf dist"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Matthias-dot-com/Weather-Application.git"
@@ -39,5 +39,5 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
   },
-  "type" : "module"
+  "type": "module"
 }
