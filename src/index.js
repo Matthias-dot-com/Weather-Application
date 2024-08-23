@@ -13,15 +13,7 @@ logoImg.src = i;
 document.addEventListener('DOMContentLoaded',() => {
   setupEventListeners();
   const fixedTop = document.querySelector('.header');
-  const navLinks = document.querySelectorAll('ul a');
-
-  function adjustBodyPadding() {
-    const fixedHeight = fixedTop.offsetHeight;
-    document.body.style.paddingTop = fixedHeight + 'px';
-  }
-
-  window.addEventListener('load', adjustBodyPadding);
-  window.addEventListener('resize', adjustBodyPadding);
+  const navLinks = document.querySelectorAll('a');
 
   navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
